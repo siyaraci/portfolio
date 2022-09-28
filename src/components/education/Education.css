@@ -1,0 +1,50 @@
+.education_container{
+    display:grid;
+}
+.education_container > div{
+    background: #896b66;
+    border: 1px solid transparent;
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: var(--transition);
+    align-items:center ;
+}
+
+.education_container > div:hover{
+    background: transparent;
+    border-color: #896b66;
+    cursor: default;
+}
+.education_content{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    row-gap: 2rem;
+   align-items: center;
+}
+
+
+@media screen and (max-width:1024px){
+    .education_container{
+        grid-template-columns: 1fr;
+       }
+    .education_container > div{
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+    .education_content{
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width:600px){
+   .education_container{
+    grid-template-columns: 1fr;
+   }
+
+   .education_container > div{
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+}
+}

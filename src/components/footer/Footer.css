@@ -1,0 +1,7 @@
+footer{
+    background: var(--color-bg-variant);
+    display: grid;
+    margin-top: 5rem;
+    padding: 0.6rem;
+    text-align: right;
+}

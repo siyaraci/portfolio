@@ -1,0 +1,25 @@
+.portfolio_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem ;
+}
+.portfolio_items{
+    background: #896b66;
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portfolio_items:hover{
+    background: transparent;
+    border-color: #896b66;
+    cursor: default;
+}
+.portfolio_items h3{
+    text-align: center;
+}
+.portfolio_item_image{
+    border-radius: 2rem ;
+    margin-bottom: 1rem;
+}
